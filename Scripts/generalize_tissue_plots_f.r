@@ -2,8 +2,8 @@ library(data.table)
 library(dplyr)
 library(ggplot2)
 
-brca <- fread("/cv_glmnet_results/Tumor/cv_glmnet_metrics_tumor.txt")
-brca_pass <- fread("/cv_glmnet_results/Tumor/enrich_results_1e9_full/pass_genes.txt")
+brca <- fread("/data/chromatin_associated_genes/pvt1/PVT1_cv_glmnet_metrics_brcatumor.txt")
+brca_pass <- fread("/data/chromatin_associated_genes/pvt1/PVT1_enrich_res/glmnet/pass_genes.txt")
 tissues <- c("Prostate", "Ovary", "Uterus", "Testis", "Adrenal")
 
 for (tissue in tissues) {
