@@ -1,0 +1,13 @@
+Common genes (R2 > 0.2):
+Prostate: 16 of 365 vs 158
+Ovary: 2 of 365 vs 7
+Uterus: 0 of 365 vs 0
+Testis: 1 of 365 vs 3
+Adrenal: 3 of 365 vs 15
+
+Common genes (R2 > 0.1):
+Prostate: 45 of 365 vs 589
+Ovary: 6 of 365 vs 46
+Uterus: 9 of 365 vs 80
+Testis: 3 of 365 vs 112
+Adrenal: 12 of 365 vs 154
