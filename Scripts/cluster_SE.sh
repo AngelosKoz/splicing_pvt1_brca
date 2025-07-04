@@ -75,7 +75,6 @@ echo "Indexing completed."
 #sbatch cluster_SE.sh tcga_data/BRCA_all_soft/ BRCA_all no no y RAD51B chr14 67809779 68740218   # ENSG00000182185.19
 #sbatch cluster_SE.sh tcga_data/BRCA_all_soft/ BRCA_all no no y SLC30A8 chr8 116940273 117186714 # ENSG00000164756.13
 #sbatch cluster_SE.sh tcga_data/BRCA_all_soft/ BRCA_all no no y DLEU2 chr13 49956670 50125720    # ENSG00000231607.15
-#sbatch cluster_SE.sh tcga_data/BRCA_all_soft/ BRCA_all no no y DRAIC chr15 69462921 69843120    # ENSG00000245750.11
 #sbatch cluster_SE.sh tcga_data/BRCA_all_soft/ BRCA_all no no y CASC15 chr6 21664184 22654455    #  ENSG00000272168.10
 #sbatch cluster_SE.sh tcga_data/BRCA_all_soft/ BRCA_all no no y TPRG1 chr3 188947214 189325304   # ENSG00000188001.10
 #sbatch cluster_SE.sh tcga_data/BRCA_all_soft/ BRCA_all no no y PTPRT chr20 42072752 43189970    # ENSG00000196090.14
