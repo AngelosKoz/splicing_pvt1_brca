@@ -48,3 +48,8 @@
 
 - **Generalization results**:  
   `/data/tissues/<tissue>/PVT1_generalized_glmnet_coeff_metrics.tsv`
+
+
+
+k-means code : https://github.com/evgnt/chrTT-seq/
+Random Forest code: 
