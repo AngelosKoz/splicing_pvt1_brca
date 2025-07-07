@@ -42,6 +42,7 @@ THREADS_PER_JOB=10
 
 export THREADS_PER_JOB COUNTS_LEVEL COUNT_ID GTF_FILE OUTPUT_DIR
 
+# For paired-end reads, use -p
 : << COMMENT
 find "$WORKDIR" -name '*.bam' -print0 |
 parallel -0 -j "$MAX_JOBS" --no-notice --bar --progress --plain \
@@ -52,14 +53,14 @@ parallel -0 -j "$MAX_JOBS" --no-notice --bar --progress --plain \
 COMMENT
 
 # For single-end reads, use -s 1
-#: << COMMENT
+: << COMMENT
 find "$WORKDIR" -name '*.bam' -print0 |
 parallel -0 -j "$MAX_JOBS" --no-notice --bar --progress --plain \
     featureCounts -T "$THREADS_PER_JOB" -s 1 -Q 255 \
                   -t "$COUNTS_LEVEL" -F GTF -g "$COUNT_ID" \
                   -a "$GTF_FILE" \
                   -o "$OUTPUT_DIR"/{/.}_counts.txt {} 
-#COMMENT
+COMMENT
 
 mv "${OUTPUT_DIR}"/*.summary "${OUTPUT_DIR}/summaries/"
 
