@@ -5,20 +5,8 @@ library(survminer)
 library(dplyr)
 library(tidyr)
 
-exon_exp <- fread("/data/counts/exonLevel_allCounts_filtbyexpr.tsv")
-colnames(exon_exp)[1] <- "gene_id"
 SE_df <- fread("/data/chromatin_associated_genes/pvt1/All_Subtypes_top_37_FeatLabels_SS3.altSS_L50")
 samples <- data.frame(file_name = SE_df$V1)
-
-sig_gene <- data.frame(
-  gene_id = c("ENSG00000106803.10","ENSG00000015479.20","ENSG00000251562.11",
-              "ENSG00000278864.1","ENSG00000077312.9","ENSG00000178502.6",
-              "ENSG00000115464.15","ENSG00000249859.14","ENSG00000111640.15",
-              "ENSG00000136997.22"),
-  gene_name = c("SEC61B","MATR3","MALAT1","TEC","SNRPA","KLHL11",
-                "USP34","PVT1","GAPDH","MYC")
-)
-surv_genes <- merge(sig_gene, exon_exp, by = "gene_id")
 
 identifier <- fread("/data/survival/brca_metadata/concat_manifest_with_details.tsv")
 survival_data <- fread("/data/survival/brca_metadata/curated_survival_BRCA.txt")
