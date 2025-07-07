@@ -14,7 +14,7 @@ export R_LIBS_USER=/home/R/x86_64-pc-linux-gnu-library/4.1
 
 
 : << COMMENT
-sbatch /home/akozonakis/cluster_scripts/cluster_generalize_cv_linear.sh \
+sbatch cluster_generalize_cv_linear.sh \
     --manifest_file <path_to_manifest> \              <-- Manifest file containing metadata, along with the sample information (file_name) and a condition column
     --coefficients_file <path_to_coefficients_file> \ <-- File containing the coefficients from the linear regression model (output from cv lm and cv glmnet models)
     --model_obj <path_to_model_obj> \                 <-- File containing pre-trained models (optional, for 'object' input_mode)
