@@ -1,4 +1,4 @@
-This repository accompanies the preprint PVT1 splicing activity predicts genome-wide gene expression with miRNA regulatory signatures. Please note that it is actively being updated, and some files or scripts may change as the project develops.
+This repository accompanies the preprint [PVT1 splicing activity predicts genome-wide gene expression with miRNA regulatory signatures](https://www.biorxiv.org/content/10.1101/2025.07.25.666741v1). Please note that it is actively being updated, and some files or scripts may change as the project develops.
 
 
 
